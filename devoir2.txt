@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Validateur RegEx</p>
+
+<button onclick="Fonction()">Verifier</button>
+
+<p id="demo"></p>
+
+<script>
+function Fonction() {
+    var ALF = "ALFi = 5243 * 5124 :-)"; 
+    if (/(((([a-z|A-Z]{4})(\s[=]\s)))(((\d{4}\s:-[)])|(\d{3}\s:-[)])|(\d{2}\s:-[)])|(\d\s:-[)]))|((\d{4}|\d{3}|\d{2}|\d)(\s[+]\s)(\d{4}|\d{3}|\d{2}|\d)(\s:-[)]))|((\d{4}|\d{3}|\d{2}|\d)(\s[-]\s)(\d{4}|\d{3}|\d{2}|\d)(\s:-[)]))|((\d{4}|\d{3}|\d{2}|\d)(\s[*]\s)(\d{4}|\d{3}|\d{2}|\d)(\s:-[)]))))/g.test(ALF)) 
+        {
+            document.getElementById("demo").innerHTML = ":-)";
+	}
+   else 
+         {     
+	    document.getElementById("demo").innerHTML = ":-(";
+	 }
+    
+    
+}
+</script>
+
+</body>
+</html>
