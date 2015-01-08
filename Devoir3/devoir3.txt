@@ -1,3 +1,5 @@
+//Faire la topologie du langage boss en peg.js
+
 start
   = (action)*
 
